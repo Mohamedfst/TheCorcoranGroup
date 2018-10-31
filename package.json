@@ -9,9 +9,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -26,5 +24,8 @@
     "google-auth-library": "^2.0.1",
     "googleapis": "^27.0.0",
     "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   }
 }
