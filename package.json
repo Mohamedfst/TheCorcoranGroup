@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Create a RESTful API to get a list of US Presidents from a google doc with UI to put names in ascending or descending order using nodejs, expressjs, and reactjs.",
   "main": "server.js",
+  "engines": {
+   "node": "8.11.2",
+   "npm": "6.4.1"
+},
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
