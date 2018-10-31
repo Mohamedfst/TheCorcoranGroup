@@ -1,0 +1,28 @@
+{
+  "name": "corcoran",
+  "version": "1.0.0",
+  "description": "Create a RESTful API to get a list of US Presidents from a google doc with UI to put names in ascending or descending order using nodejs, expressjs, and reactjs.",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/momo112/TheCorcoranGroup.git"
+  },
+  "author": "Mohamed Keita",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "google-auth-library": "^2.0.1",
+    "googleapis": "^27.0.0",
+    "mysql": "^2.16.0"
+  }
+}
