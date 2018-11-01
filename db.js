@@ -1,11 +1,10 @@
 const mysql = require('mysql');
-//mysql://bc62d9444a7632:6f42aab0@us - cdbr - iron - east - 01. cleardb.net/heroku_e2c313dd41a324d?reconnect=true
-
+//mysql://bb78941cf50806:2af7b37b@us-cdbr-iron-east-01.cleardb.net/?reconnect=true
 var db_config = {
   host: 'us-cdbr-iron-east-01.cleardb.net',
-  user: 'bc62d9444a7632',
-  password: '6f42aab0',
-  database: 'heroku_e2c313dd41a324d'
+  user: 'bb78941cf50806',
+  password: '2af7b37b',
+  database: 'heroku_95b41686b9959a9'
 };
 
 var connection;
