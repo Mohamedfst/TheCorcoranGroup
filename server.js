@@ -6,7 +6,7 @@ const presidents = require('./routes/api/presidents');
 var con = require('./db');
 
 const app = express();
-app.use(express.logger());
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
