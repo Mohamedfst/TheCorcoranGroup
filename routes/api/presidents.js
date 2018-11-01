@@ -5,6 +5,8 @@ const router = express.Router();
 const mysql = require('mysql');
 var con = require('../../db');
 
+
+
 const fs = require('fs');
 const readline = require('readline');
 const { google } = require('googleapis');
@@ -118,7 +120,7 @@ router.get('/activate', function(req, res) {
 
 //Display all names
 router.get('/all', function(req, res) {
-    con.query('SELECT * FROM cgons', function(error, results, fields) {
+  con.query('SELECT * FROM cgons', function(error, results, fields) {
         if (error) {
             throw error;
         } else {
