@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const router = express.Router();
 const mysql = require('mysql');
-var con = require('../../db');
+var con = require('../../server');
 
 const fs = require('fs');
 const readline = require('readline');
@@ -114,6 +114,8 @@ router.get('/activate', function(req, res) {
     });
 
 });
+
+
 //Display all names
 router.get('/all', function(req, res) {
     con.query('SELECT * FROM cgons', function(error, results, fields) {
