@@ -14,7 +14,7 @@
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild":
-      "npm run dev"
+      "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
