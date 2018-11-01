@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const router = express.Router();
 const mysql = require('mysql');
-var con = require('../../server');
+var con = require('../../db');
 
 const fs = require('fs');
 const readline = require('readline');
